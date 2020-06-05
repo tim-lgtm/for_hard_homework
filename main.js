@@ -4,8 +4,8 @@ result =  result ** 3;
 console.log(result);
 result = result.toString();
 console.log(typeof result);
-console.log(result [0]);
-console.log(result [1]);
+result.slice(0,2)
+console.log(result.substr(0,2));
 
 
 
