@@ -9,21 +9,19 @@
 
 // let result = Tim(11111);
 // console.log(result );
+let arr = ['234','453', '649', '793' , '536', '999', '487'];
+let newArray = [];
 
-function Tim(a) {
-  if (typeof a == 'string'){
-    let x = a.trim();
-    if(a.length > 30 ){
-      return a.substring(0, 30) + '...';
-    }else {
-    return x ;
-    }
-  }else{
-    return 'Подумай ещё ';
+for( i = 0; i <= arr.length; i++){
+  let number = `${arr[i]}`.split('')[0];
+  if(number == 2 || number == 4){
+    newArray.push(arr[i])
   }
 }
-let result = Tim(223);
-console.log(result );
+console.log(newArray);
 
-
-  
+for(i = 1 ; i <= 100; i++){
+  let delit = i / 1;
+  let delit2 = i / i
+  console.log('Число - ' + i + '; Первый делитель - ' + delit + '; Второй делитель - ' + delit2);
+}
